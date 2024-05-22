@@ -1,3 +1,11 @@
+
+A sincere request
+please remove the Script which was shown in correction.png.. i added the Joi .. but forget to remove the  validation in controller level in a hurry.
+utils\users.utils.js
+  line no 95 to 100 (if (!checkStatus(details.Status)) ...})
+
+
+
 I've implemented The problem given with file structure  where there are two json files ..users.json and Task.json..  that's currently running smoothly
 
 However the mongodb wrappers also i have written .but its not tested as i dont have the Mongo in my system..
