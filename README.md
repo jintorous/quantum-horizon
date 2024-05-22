@@ -1,7 +1,9 @@
 
 A sincere request
 please remove the Script which was shown in correction.png.. i added the Joi .. but forget to remove the  validation in controller level in a hurry.
+
 utils\users.utils.js
+
   line no 95 to 100 (if (!checkStatus(details.Status)) ...})
 
 
