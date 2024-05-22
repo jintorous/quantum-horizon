@@ -1,6 +1,6 @@
 
 A sincere request
-please remove the Script which was shown in correction.png.. i added the Joi .. but forget to remove the  validation in controller level in a hurry.
+please remove the Script which was shown in correction.png.. i added the Joi .. but forget to remove the  validation in controller level  and the spelling are missmatching which was done in a hurry.
 
 utils\users.utils.js
 
