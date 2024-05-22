@@ -1,0 +1,151 @@
+{
+	"info": {
+		"_postman_id": "309cb6a8-4268-4fbc-a6cf-432e315d4930",
+		"name": "quantum-test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7614479"
+	},
+	"item": [
+		{
+			"name": "istUsers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/listUsers",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"listUsers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createUsers",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"userName\":\"rakeshDasplo3\",\n\"password\":\"appl454e\",\n\"firstName\":\"rakesh\",\n\"lastName\":\"das\",\n\"occupation\":\"student\",\n\"salary\":3434\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{urls}}/createUsers",
+					"host": [
+						"{{urls}}"
+					],
+					"path": [
+						"createUsers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"userName\":\"rakeshDas\",\n\"password\":\"apple\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{urls}}/login",
+					"host": [
+						"{{urls}}"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createTask",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InJha2VzaERhcyIsImlhdCI6MTcxNjM4NjYwMywiZXhwIjoxNzE2MzkwMjAzfQ.w807OPaQ0udX1eXUjHrNjtLKLHtOqaa2XV5xqDEsLKM"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"startDate\" :\"\",\n    \"DateOfComplition\":\"\",\n    \"DueDate\":\"\",\n    \"Desc\":\"eret\",\n    \"Status\" :\"WIP\",\n    \"userName\":\"\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{urls}}/createTask",
+					"host": [
+						"{{urls}}"
+					],
+					"path": [
+						"createTask"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listTasksWithId/id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InJha2VzaERhcyIsImlhdCI6MTcxNjM4Mzc4OSwiZXhwIjoxNzE2Mzg3Mzg5fQ.JBRW--DmV9_ZMTJ5APSuL_LF6F2mSuwD2QdWiYYOCt4"
+					}
+				],
+				"url": {
+					"raw": "{{urls}}/listTasksWithId/4",
+					"host": [
+						"{{urls}}"
+					],
+					"path": [
+						"listTasksWithId",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
