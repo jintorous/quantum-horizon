@@ -1,19 +1,21 @@
-i have implemented with file structure which is running fine
+I've implemented The problem given with file structure  where there are two json files ..users.json and Task.json..  that's currently running smoothly
 
-the MongoDB wrapper i have written
+However the mongodb wrappers also i have written .but its not tested..
 its in 
 
 /DB ==> for connection
 
 /schmea ==> for schema
 
-/services => for query
+/services => for generalise functions which execute the mongo query
 
 
 
-to get the query running we need to inject the code in the utils level
+to get the query running we need to inject the functions in the utils level
 
-so for finding one or  all the users we need to do this in utls
+Lets take an example
+
+finding one or  all the users we need to do this in utls
 
 const User = require('../schema/users.schema');
 
